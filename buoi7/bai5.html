@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[1,1,2,2,3,4,5,6];
+        var cnt;
+        for(let i=0;i<a.length;i++){
+             cnt=0;
+            for(let j=0;j<a.length;j++){
+                if(a[i]==a[j]){
+                    cnt++;
+                }
+            }          
+            if(cnt==1){
+            console.log(a[i]);   
+            break;        
+            }
+        }
+        if(cnt>1){
+            console.log("Không có phần tử nào là duy nhất")
+        }
+    </script> 
+</body>
+</html>

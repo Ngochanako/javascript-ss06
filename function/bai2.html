@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[12,"12","abc","abc d"];
+        maxLength(a);
+        function maxLength(a){
+            let tmp=0,b;
+            for(let i=0;i<a.length;i++){
+                if(a[i]!==undefined){
+                   if(tmp<a[i].length) {
+                    tmp=a[i].length;
+                    b=a[i];
+                   }
+                }
+            }
+            console.log(b)
+        }
+    </script>
+</body>
+</html>

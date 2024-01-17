@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var a=[-3,2,6,-10,8,9,-5,6];
+         newArray(a);
+         function newArray(a){
+            let n=a.length;
+            let max=0,sum=0,start,end,mark;
+            for(let i=0;i<n;i++){
+                start=i;
+                sum+=a[i];
+                if(sum>max) {
+                    max=sum;
+                    end=i;
+                    start=mark;
+                }
+                if(sum<0){
+                    sum=0;
+                    mark=i+1;
+                }               
+            }
+            console.log(a.slice(start,end+1))
+         }
+    </script>
+</body>
+</html>

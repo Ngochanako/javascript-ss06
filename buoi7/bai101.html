@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[1,2,3,5,2,4,1,5,3]
+        let n=a.length;
+        let b=[],c=[];
+        for(let i=0;i<n;i++){
+            let n=b.indexOf(a[i]);
+            if(n!==-1){
+                b=b.slice(n+1);
+            }
+            b.push(a[i]);
+            if(b.length>c.length) c=b;
+        }
+        console.log("Mảng con phân biệt độ dài lớn nhất là:"+c);
+        console.log("Độ dài mảng con phân biệt lớn nhất là:"+ c.length)
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var s="abcde"
+        var n=prompt("Nhập vào chuỗi bất kỳ");
+        console.log(check(s,n));
+        function check(s,n){
+            for(let i=0;i<n.length;i++){
+                if(s.indexOf(n[i])===-1){
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

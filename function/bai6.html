@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a="abc def"
+        console.log(capWord(a))
+        function capWord(s){
+            let w=s.split(' ');
+            let s1=w.map(word=>word.charAt(0).toUpperCase()+word.slice(1))
+            let newS=s1.join(' ');
+            return newS;
+        }
+    </script>
+</body>
+</html>

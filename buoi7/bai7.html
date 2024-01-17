@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str=prompt("Nhập vào 1 chuỗi bất kỳ");
+        myFuntion(str)
+        function myFuntion(s){
+            let n=s.length;
+            let a=[];           
+            for(let i=0;i<n;i++){
+                let tmp="";
+                for(let j=i;j<n;j++){
+                    tmp=tmp+s[j];
+                    a.push(tmp);
+                }
+            }
+            return console.log(a);
+        }
+    </script>
+</body>
+</html>
